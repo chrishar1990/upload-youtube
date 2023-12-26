@@ -1,17 +1,16 @@
-# Project Title
+# Youtube Upload
 
-Simple overview of use/purpose.
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+The CLI app searches for an s3 bucket for a particular video file and uploads the file to a YouTube channel.
 
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+*requirements code: Install packages with pip: -r requirements.txt
+* Use a Python Virtual Environment if you run the code without the dockerfile.
 
 ### Installing
 
@@ -19,44 +18,22 @@ An in-depth paragraph about your project and overview of use.
 * Any modifications needed to be made to files/folders
 
 ### Executing program
+* python3 app.py --input "file path and name of the file you want to give."
+* Example: python3 app.py --input /home/treeboy/upload-youtube/ocean.mp4
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+*You can also download run install the Dockerfile and run it.
 
 ## Help
 
-Any advise for common problems or issues.
+*https://www.youtube.com/watch?v=eq-mjehACe4&ab_channel=SoftwareSage    How to upload to Youtube.
+*You will also need an account with Google Cloud to upload and allow youtube apis. It is explained in the video above. You will need to verify the application if you want to have a non-private video uploaded. 
+If you already have a video you can use the upload youtube file only. an example of what to use with the code below.
 ```
-command to run if program contains helper info
+python3 upload_video.py --file="/home/treeboy/upload-youtube/ocean.mp4" --title="Ocean" --description="Test app" --keywords="Python, programming" --category="28" --privacyStatus="private"
 ```
 
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+* [davidrazmadzeExtra]([https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46](https://github.com/davidrazmadzeExtra/YouTube_Python3_Upload_Video)https://github.com/davidrazmadzeExtra/YouTube_Python3_Upload_Video)
