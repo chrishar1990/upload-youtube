@@ -19,10 +19,14 @@ The CLI app searches for an s3 bucket for a particular video file and uploads th
 
 ### Executing program
 * "file path and name of the file you want to give."
-''' python3 app.py --input'''
+'''
+python3 app.py --input
+'''
 
 * Example:
-  '''python3 app.py --input /home/treeboy/upload-youtube/ocean.mp4'''
+  '''
+  python3 app.py --input /home/treeboy/upload-youtube/ocean.mp4
+  '''
 
 *You can also download run install the Dockerfile and run it.
 
